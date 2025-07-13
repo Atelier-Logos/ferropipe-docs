@@ -1,0 +1,82 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #f7711f;
+  --ifm-color-primary-dark: #f7711f;
+  --ifm-color-primary-darker: #f7711f;
+  --ifm-color-primary-darkest: #f7711f;
+  --ifm-color-primary-light: #f7711f;
+  --ifm-color-primary-lighter: #f7711f;
+  --ifm-color-primary-lightest: #f7711f;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #f7711f;
+  --ifm-color-primary-dark: #f7711f;
+  --ifm-color-primary-darker: #f7711f;
+  --ifm-color-primary-darkest: #f7711f;
+  --ifm-color-primary-light: #f7711f;
+  --ifm-color-primary-lighter: #f7711f;
+  --ifm-color-primary-lightest: #f7711f;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  /* Override background colors to pure black */
+  --ifm-background-color: #000000;
+  --ifm-background-surface-color: #000000;
+  --ifm-navbar-background-color: #000000;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #f9fafb; /* slate-50 */
+  color: #475569; /* slate-600 */
+}
+.footer a {
+  color: #0f172a;
+}
+.footer a:hover {
+  color: #4f46e5; /* indigo-600 */
+}
+[data-theme='dark'] .footer {
+  background-color: #0f172a; /* slate-900 */
+  color: #cbd5e1; /* slate-300 */
+}
+[data-theme='dark'] .footer a {
+  color: #f8fafc; /* slate-50 */
+}
+[data-theme='dark'] .footer a:hover {
+  color: #6366f1; /* indigo-500 */
+}
+
+/* Navbar brand styling */
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.navbar__logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 0;
+}
+
+.navbar__logo img {
+  height: 100%;
+  width: auto;
+}
+
+.navbar__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* Increased line-height slightly to avoid descenders being clipped */
+  line-height: 1.25;
+}
+
