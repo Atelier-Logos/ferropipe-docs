@@ -86,7 +86,7 @@ const config: Config = {
         src: 'img/logo-light.png',
         // Dark-mode logo (displayed when prefers-color-scheme: dark)
         srcDark: 'img/logo-dark.png',
-        href: 'https://www.atelierlogos.studio',
+        href: '/',
       },
       items: [
         {
@@ -97,7 +97,7 @@ const config: Config = {
         },
         {to: '/pricing', label: 'Pricing', position: 'left'},
         {
-          href: 'https://github.com/atelierlogos',
+          href: 'https://github.com/atelier-logos',
           label: 'GitHub',
           position: 'right',
         },
@@ -110,8 +110,12 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Getting Started',
               to: '/docs/intro',
+            },
+            {
+              label: 'Endpoints',
+              to: '/docs/endpoints',
             },
           ],
         },
@@ -119,16 +123,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/atelier-logos',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Slack',
+              href: 'https://join.slack.com/t/atelierlogos/shared_invite/zt-384mjl0hs-X2WTb8sc1xFrrDKULcgboQ',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'GitHub',
+              href: 'https://github.com/Atelier-Logos',
             },
           ],
         },
@@ -136,8 +140,8 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Consulting',
+              href: 'https://www.atelierlogos.studio/',
             },
           ],
         },
