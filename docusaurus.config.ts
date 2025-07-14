@@ -115,7 +115,7 @@ const config: Config = {
             },
             {
               label: 'Endpoints',
-              to: '/docs/endpoints',
+              to: '/docs/category/endpoints',
             },
           ],
         },
