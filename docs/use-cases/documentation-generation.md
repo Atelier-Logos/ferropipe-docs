@@ -10,7 +10,7 @@ A great use case for developer experience that can be enabled with the `/package
 
 ```bash
 curl -X POST http://localhost:8080/packages \    
-  -H "Authorization: Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"name": "serde", "version": "1.0.0"}' \
   -v

@@ -10,7 +10,7 @@ A powerful use case for the Platform Logos API is scanning a WASM or other binar
 
 ```bash
 curl -X POST http://localhost:8080/binary/scan-secrets \    
-  -H "Authorization: Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -F "file=@MobiFlightWasmModule.wasm" \
   -v
 ```

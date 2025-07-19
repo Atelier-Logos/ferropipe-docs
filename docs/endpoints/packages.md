@@ -12,7 +12,7 @@ The `/packages` endpoint takes the name and version of a crate as a JSON object 
 
 ```bash
 curl -X POST http://localhost:8080/packages \    
-  -H "Authorization: Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"name": "serde", "version": "1.0.0"}' \
   -v
@@ -24,6 +24,6 @@ The `/packages/{id}` endpoint takes the id of a crate as a path parameter and re
 
 ```bash
 curl -X GET http://localhost:8080/packages/{id} \    
-  -H "Authorization: Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -v
 ```

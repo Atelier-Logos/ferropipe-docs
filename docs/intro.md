@@ -14,7 +14,7 @@ With it, you can use simple cURL requests to get deep intelligence about the Rus
 
 ```
 curl -X POST http://localhost:8080/binary \    
-  -H "Authorization: Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -F "file=@MobiFlightWasmModule.wasm" \
   -v
 ```

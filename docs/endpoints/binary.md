@@ -10,7 +10,7 @@ The `/binary` endpoint ingests a binary via multipart/form-data, and returns a J
 
 ```bash
 curl -X POST http://localhost:8080/binary \    
-  -H "Authorization: Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -F "file=@MobiFlightWasmModule.wasm" \
   -v
 ```
@@ -21,7 +21,7 @@ The `/binary/scan-secrets` endpoint ingests a binary via multipart/form-data, an
 
 ```bash
 curl -X POST http://localhost:8080/binary/scan-secrets \    
-  -H "Authorization: Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -F "file=@MobiFlightWasmModule.wasm" \
   -v
 ```
@@ -32,7 +32,7 @@ The `/binary/{binary_hash}` endpoint fetches a binary by its hash.
 
 ```bash
 curl -X GET http://localhost:8080/binary/{binary_hash} \
-  -H "Authorization: Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -v
 ```
 
@@ -43,6 +43,6 @@ The `/binary/{binary_hash}/sbom` endpoint fetches a SBOM by the hash of the bina
 
 ```bash
 curl -X GET http://localhost:8080/binary/{binary_hash}/sbom \    
-  -H "Authorization: Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -v
 ```

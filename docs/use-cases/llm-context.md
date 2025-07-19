@@ -10,7 +10,7 @@ One of the great hidden use cases for the `/packages` endpoint is using it as mo
 
 ```bash
 curl -X POST http://localhost:8080/packages \    
-  -H "Authorization: Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101" \
+  -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"name": "serde", "version": "1.0.0"}' \
   -v
@@ -43,7 +43,7 @@ async function uploadBinaryFile() {
   const response = await fetch('http://localhost:8080/binary', {
     method: 'POST',
     headers: {
-      'Authorization': 'Bearer fp_7e9f2c80-b1d4-4c7b-9df3-b0e8e4aa0101',
+      'Authorization': 'Bearer YOUR_API_KEY',
       // Let `form.getHeaders()` supply `Content-Type` if in Node
       ...(form.getHeaders ? form.getHeaders() : {})
     },
